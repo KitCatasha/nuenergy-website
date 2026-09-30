@@ -12,7 +12,7 @@ export default {
 			],
 			messageIndex: 0,
 			messageKey: 0, // Unique key for each message
-			message: 'Natural Energy. Built for Performance.', // Initial message
+			message: '100% natural, vegan, halal, gluten-free, and yummy', // Initial message
 		};
 	},
 	mounted() {
@@ -48,8 +48,7 @@ export default {
       <div class="hero-heading-space">
         <transition appear name="fade" mode="out-in">
           <h1 :key="messageKey" class="hero-heading">
-            <template v-if="messageIndex === 0"><span class="hero-heading-line">Natural Energy.</span> <span class="hero-heading-line">Built for Performance.</span></template>
-            <template v-else>{{ message }}</template>
+            {{ message }}
           </h1>
         </transition>
       </div>
@@ -61,7 +60,7 @@ export default {
         </li>
         <li>
           <span class="hero-badge-icon"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="m19 3-12 16h8l-2 10 13-17h-9Z" fill="currentColor"/></svg></span>
-          <span>29 g<br />carbohydrates</span>
+          <span>29 <span style="text-transform: none;">g</span><br />carbohydrates</span>
         </li>
         <li>
           <span class="hero-badge-icon"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3S6 16 6 21a10 10 0 0 0 20 0C26 16 16 3 16 3Z" fill="currentColor"/></svg></span>
