@@ -1,0 +1,27 @@
+{
+  "name": "nuenergy-cloudflare",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && vite build --ssr src/entry-server.js --outDir .ssr && node scripts/prerender.js",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.5.0",
+    "aos": "2.3.4"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0",
+    "@vitejs/plugin-vue": "^5.2.0",
+    "@vue/server-renderer": "^3.5.0",
+    "tailwindcss": "3.4.17",
+    "postcss": "^8.4.0",
+    "autoprefixer": "^10.4.0",
+    "flyonui": "1.3.0",
+    "@tailwindcss/forms": "^0.5.3",
+    "@tailwindcss/typography": "^0.5.16",
+    "tailwindcss-animated": "^2.0.0"
+  }
+}

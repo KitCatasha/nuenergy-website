@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@font-face {
+	font-family: 'Quicksand-900';
+	src: url('../fonts/quicksand.bold-regular.otf') format('opentype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+	.text-stroke {
+		-webkit-text-stroke: 2px oklch(58.59% 0.1241 68.63 / 40%);
+		color: oklch(58.59% 0.1241 68.63 / 100%);
+	}
+
+	.text-shadow {
+		text-shadow: 1px 1px 2px #ab6c0e;
+	}
+
+	.text-glow {
+		text-shadow: 0 0 10px oklch(58.59% 0.1241 68.63 / 100%);
+	}
+}
+
+@layer components {
+	.card {
+		@apply bg-gray-800;
+	}
+
+	.input {
+		@apply bg-gray-900;
+	}
+
+	.textarea {
+		@apply bg-gray-900;
+	}
+}
+
+html,
+body {
+	@apply bg-[oklch(97.15%_0.0281_95.89)];
+}
+
+.navbar-sticky {
+	@apply !fixed top-0 overflow-hidden;
+}
+
+#hero {
+	@apply relative top-0 min-h-screen;
+}
+
+#about {
+	@apply min-h-screen w-full;
+
+	.title {
+		@apply text-center font-playfair text-3xl font-black text-[oklch(58.59%_0.1241_68.63)] md:text-5xl;
+	}
+
+	.sub-title {
+		@apply font-sans text-base font-bold text-[oklch(97.15%_0.0281_95.89)] md:text-lg;
+	}
+}
+
+#inovative-design {
+	.title {
+		@apply font-playfair text-3xl font-black text-[oklch(58.59%_0.1241_68.63)] md:text-5xl;
+	}
+
+	.isi {
+		@apply text-justify font-sans text-base font-medium text-[oklch(57.44%_0.0355_111.38)];
+	}
+
+	ol {
+		li {
+			@apply font-sans text-[oklch(58.59%_0.1241_68.63)];
+		}
+	}
+
+	img {
+		@apply w-full object-contain;
+	}
+}
+
+#info {
+	@apply bg-[url('../images/bg-info.png')] bg-[size:100%_130%] bg-center bg-no-repeat;
+
+	.title {
+		@apply mb-10 text-center font-playfair text-3xl font-black text-[oklch(57.44%_0.0355_111.38)] md:mb-20 md:text-5xl;
+	}
+
+	.point {
+		@apply text-center font-sans text-sm font-semibold text-[oklch(38.15%_0.0251_200.01)] md:text-xl;
+	}
+}
+
+[id^='flavor_'] {
+	@apply mx-0 h-auto max-h-max w-full max-w-full px-0 pb-24 pt-10;
+
+	.title {
+		@apply mb-5 text-center font-playfair text-3xl font-black md:text-5xl;
+	}
+
+	.sub-title {
+		@apply text-center font-sans text-base font-semibold md:text-xl;
+	}
+
+	ol {
+		li {
+			@apply font-bold;
+		}
+	}
+}
+
+#benefits {
+	@apply bg-[oklch(38.15%_0.0251_200.01)];
+
+	.title {
+		@apply mb-5 text-center font-playfair text-3xl font-black text-[oklch(78.93%_0.1018_114.14)] md:text-5xl;
+	}
+
+	.card-benefits {
+		@apply min-h-[310px] bg-[oklch(97.15%_0.0281_95.89)] p-4 transition-all duration-300 ease-in-out hover:translate-y-[-4px] hover:scale-[1.03] hover:shadow-lg;
+
+		.card-title {
+			@apply mb-2 font-spartan text-xl font-bold text-[oklch(50.97%_0.0945_66.56)] md:text-2xl;
+		}
+
+		.card-description {
+			@apply font-spartan text-sm font-normal text-[oklch(50.97%_0.0945_66.56)] md:text-base;
+		}
+
+		ul {
+			li {
+				@apply font-spartan text-sm font-normal text-[oklch(50.97%_0.0945_66.56)] md:text-base;
+			}
+		}
+	}
+}
+
+#nutrition-facts {
+	@apply mx-auto grid w-full max-w-7xl grid-cols-1 gap-10 bg-[oklch(97.15%_0.0281_95.89)] p-10 md:grid-cols-2;
+
+	.card-nutrition-facts {
+		@apply min-h-48 max-w-sm border border-[oklch(58.72%_0.1243_67.91)] bg-[oklch(97.15%_0.0281_95.89)] p-3 md:min-h-52;
+
+		.card-title {
+			@apply mb-3 text-center font-playfair text-[2.3rem] font-black text-[oklch(58.72%_0.1243_67.91)] md:text-[2.5rem];
+		}
+
+		p {
+			@apply font-spartan text-sm text-[oklch(58.72%_0.1243_67.91)] md:text-base;
+		}
+
+		.nutri-point {
+			@apply text-xs font-semibold !leading-3 md:text-sm;
+
+			&.light {
+				@apply font-light;
+			}
+
+			&.child {
+				@apply !ms-4;
+			}
+		}
+	}
+
+	.floating-container {
+		@apply flex h-28 w-28 flex-col items-center justify-center rounded-full bg-[oklch(58.59%_0.1241_68.63)] text-white md:h-36 md:w-36;
+	}
+}
+
+.menu-footer {
+	.footer-title {
+		@apply text-xl font-bold text-white;
+	}
+
+	a.link {
+		@apply text-[oklch(97.15%_0.0281_95.89)];
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}

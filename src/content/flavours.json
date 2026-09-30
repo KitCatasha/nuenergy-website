@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "name": "mango",
+    "description": "our mango flavored gel boasts a naturally infused tangy sweetness with a dash of saltiness.\n\nIngredients:\norganic coconut palm syrup\nsea salt\nnatural flavor",
+    "url": "https://coconutrate.com/",
+    "image": "img/wkq5hssGlMVLFu0Y31hLEmHUqOf1ALVB0G8e07QC.webp",
+    "direction": "lr",
+    "bg_color": "#e6ab69",
+    "title_color": "#ffffff",
+    "sub_title_color": "#fcd926"
+  },
+  {
+    "id": 8,
+    "name": "coconut palm",
+    "description": "savor all the goodness from our original flavor, coconut palm, in its coconut-like  unaltered taste, coupled with a hint of salt.\n\nIngredients:\norganic coconut palm syrup\nsea salt",
+    "url": "https://coconutrate.com/",
+    "image": "img/eSfMwG1DfwQPvkPmuxZRtdB6B8vaVKP3pD70FuM6.webp",
+    "direction": "rl",
+    "bg_color": "#d1d6b1",
+    "title_color": "#ffffff",
+    "sub_title_color": "#a2a48a"
+  }
+]
