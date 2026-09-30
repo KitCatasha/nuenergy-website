@@ -1,0 +1,12 @@
+name = "nuenergy-contact"
+main = "worker.js"
+compatibility_date = "2026-09-30"
+
+[vars]
+ALLOWED_ORIGINS = "https://www.nuenergy-nutrition.com,https://nuenergy-nutrition.com"
+FROM_EMAIL = "contact@nuenergy-nutrition.com"
+TO_EMAIL = "dmachate@yahoo.com"
+
+[[send_email]]
+name = "EMAIL"
+destination_address = "dmachate@yahoo.com"
