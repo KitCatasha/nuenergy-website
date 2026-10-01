@@ -32,7 +32,7 @@ onBeforeUnmount(() => { document.removeEventListener('keydown', onKey); });
     <aside id="site-menu" class="fixed right-0 top-0 z-50 h-dvh w-80 max-w-[90vw] bg-[#e8eadb] p-6 text-[#424b35]" aria-label="Main navigation">
       <div class="mb-8 flex items-center justify-between"><h2 class="text-xl font-bold">Menu</h2><button type="button" aria-label="Close menu" class="p-3 text-2xl" @click="closeMenu">×</button></div>
       <nav class="flex flex-col gap-6" @click="closeMenu">
-        <a href="/#hero">home</a><a href="/#about">who we are</a><a href="/#inovative-design">our pouch</a><a href="/#benefits">benefits</a><a href="/#nutrition-facts">our ingredients</a><a href="/contact/">contact us</a>
+        <a href="/#hero">home</a><a href="/#about">who we are</a><a href="/#inovative-design">our pouch</a><a href="/#benefits">benefits</a><a href="/#nutrition-facts">nutritional properties</a><a href="/contact/">contact us</a>
       </nav>
     </aside>
   </template>

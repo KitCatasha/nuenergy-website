@@ -2,7 +2,6 @@
 // import logoWhite from '../../images/nuenergy-logo-horizontal-white.webp';
 import logoWhite from '../../images/Primary Logo_Transparent White.png';
 
-const currentYear = new Date().getFullYear();
 </script>
 
 <template>
@@ -12,7 +11,7 @@ const currentYear = new Date().getFullYear();
                 <img :src="logoWhite" alt="NU Energy Logo" class="w-48" />
             </div>
             <p class="font-sans text-white">
-                © {{ currentYear }} NÜenergy Sports Nutrition, LLC<br />All
+                © 2023 NÜenergy Sports Nutrition, LLC<br />All
                 rights reserved
             </p>
         </aside>
@@ -25,7 +24,7 @@ const currentYear = new Date().getFullYear();
             <a href="/#about" class="link link-hover">who we are</a>
             <a href="/#inovative-design" class="link link-hover">our pouch</a>
             <a href="/#benefits" class="link link-hover">benefits</a>
-            <a href="/#nutrition-facts" class="link link-hover">our ingredients</a>
+            <a href="/#nutrition-facts" class="link link-hover">nutritional properties</a>
         </nav>
     </footer>
 </template>

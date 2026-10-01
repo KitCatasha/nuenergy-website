@@ -83,7 +83,7 @@ export default {
   align-items: center;
   background-size: cover;
   background-position: center;
-  padding: 150px 5% 70px;
+  padding: 110px 5% 110px;
   color: #11150b;
 }
 .hero-copy { width: 49%; max-width: 740px; }
@@ -91,23 +91,26 @@ export default {
 .hero-heading { margin: 0; font-family: 'Quicksand-900', 'Quicksand', sans-serif; font-weight: 900; font-size: inherit; line-height: 1.08; letter-spacing: -0.035em; text-wrap: balance; }
 .hero-heading-line { display: block; }
 .hero-description { margin-top: 18px; font-size: clamp(1.05rem, 1.75vw, 1.8rem); line-height: 1.3; font-weight: 500; }
-.hero-badges { display: grid; grid-template-columns: repeat(4, 1fr); list-style: none; padding: 0; margin: 32px 0; max-width: 580px; }
-.hero-badges li { display: flex; flex-direction: column; align-items: center; gap: 10px; text-align: center; padding: 0 8px; font-weight: 800; font-size: clamp(.65rem, .82vw, .85rem); line-height: 1.25; text-transform: uppercase; }
-.hero-badges li + li { border-left: 1px solid rgb(17 21 11 / 15%); }
+.hero-badges { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); list-style: none; padding: 0; margin: 32px 0; max-width: 580px; }
+.hero-badges li { display: flex; flex-direction: column; align-items: center; gap: 10px; text-align: center; padding: 0 8px; font-weight: 900; font-size: clamp(.775rem, calc(.82vw + .125rem), .975rem); line-height: 1.25; text-transform: uppercase; }
 .hero-badge-icon { width: 54px; height: 54px; border: 2px solid currentColor; border-radius: 50%; display: grid; place-items: center; }
 .hero-badge-icon svg { width: 34px; height: 34px; }
 .hero-discover { display: inline-flex; align-items: center; justify-content: center; gap: 25px; border-radius: 999px; background: #677021; color: #fff9e9; padding: 16px 30px; font-size: 1.15rem; font-weight: 600; transition: background .2s; }
 .hero-discover:hover { background: #4f5718; }
 .hero-discover:focus-visible { outline: 3px solid #11150b; outline-offset: 4px; }
 .hero-discover span { font-size: 1.6rem; line-height: 1; }
+@media (min-width: 768px) {
+  .hero-badges { width: 100%; transform: translateX(calc(27px - 12.5%)); }
+  .hero-badges li { padding: 0; }
+}
 @media (max-width: 767px) {
   .hero-runner { min-height: 100svh; align-items: flex-end; padding: 340px 22px 40px; background-position: 63% top; }
-  .hero-copy { width: 100%; max-width: 600px; background: rgb(255 249 233 / 90%); border-radius: 22px; padding: 22px 18px; }
+  .hero-copy { width: 100%; max-width: 600px; background: rgb(255 249 233 / 50%); border-radius: 22px; padding: 22px 18px; }
   .hero-heading-space { font-size: clamp(1.8rem, 6.8vw, 2.6rem); min-height: 4.4em; }
   .hero-description { font-size: 1rem; }
   .hero-desktop-break { display: none; }
   .hero-badges { margin: 25px 0; }
-  .hero-badges li { padding: 0 3px; font-size: .58rem; }
+  .hero-badges li { padding: 0 3px; font-size: .705rem; }
   .hero-badge-icon { width: 42px; height: 42px; }
   .hero-badge-icon svg { width: 27px; height: 27px; }
   .hero-discover { width: 100%; font-size: 1rem; padding: 13px 18px; }
