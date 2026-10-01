@@ -1,28 +1,22 @@
-# NÜenergy website
+# NÜenergy Website
 
-A migration and frontend update of my father's sports nutrition website, maintained by me. I adapted the original Laravel/Vue/Inertia frontend for static hosting on Cloudflare Pages, updated the visuals and nutritional content, and connected a contact form.
+I edited and migrated my father’s sports-nutrition website from Laravel to a Vue application.
 
-**Live website:** https://www.nuenergy-nutrition.com/
+## My Contributions
 
-## My contributions
+- Migrated the website to Vue, Vite, and Cloudflare
+- Updated product visuals, nutritional content, and responsive layouts
+- Added prerendered SEO and social-sharing metadata
+- Integrated a contact form using Cloudflare Workers and Turnstile
 
-- Migrated the production frontend from Hostinger to Cloudflare Pages.
-- Replaced the Laravel/Inertia dependency with a standalone Vue application and editable JSON product data.
-- Added build-time prerendering for the homepage and Contact page.
-- Updated the homepage illustration, product pouch artwork and nutrition table.
-- Updated navigation and footer links, added a themed Contact page, and removed shopping calls to action.
-- Configured email forwarding and tested contact form delivery to the receiving inbox.
-- Added page-specific SEO metadata, social sharing metadata, robots.txt and a sitemap.
+## Tech Stack
 
-## Original work and attribution
+Vue 3 · Vite · Tailwind CSS · AOS · Cloudflare Pages · Cloudflare Workers · Turnstile
 
-This project builds on the original website design and Vue components by the original developer.
+## Live Website
 
-My portfolio contribution is the migration, frontend adaptation, content updates and subsequent improvements. The original website design and code are credited to their original creator. This repository does not assign a new open-source license or grant permission to reuse third-party assets.
+[nuenergy-nutrition.com](https://www.nuenergy-nutrition.com/)
 
-## Technology
+## Attribution
 
-Vue 3, Vite, Tailwind CSS, AOS, Vue server rendering at build time, Cloudflare Pages, Cloudflare Workers and Turnstile.
-
-The frontend does not require PHP, a database or a running Node.js server in production. Node.js is used during development and builds. Contact submissions use a separately deployed Worker.
-
+The original design and Vue components were created by the original developer. This repository showcases my migration, frontend adaptation, and subsequent improvements.
