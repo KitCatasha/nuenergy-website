@@ -13,10 +13,14 @@ I edited and migrated my father’s sports-nutrition website from Laravel to a V
 
 Vue 3 · Vite · Tailwind CSS · AOS · Cloudflare Pages · Cloudflare Workers · Turnstile
 
-## Live Website
-
-[nuenergy-nutrition.com](https://www.nuenergy-nutrition.com/)
-
 ## Attribution
 
-The original design and Vue components were created by the original developer. This repository showcases my migration, frontend adaptation, and subsequent improvements.
+The original developer created the design and Vue components. This repository showcases my migration, frontend adaptation, and subsequent improvements.
+
+## License
+
+Source code that is owned by or licensed for release by this project is available under the [MIT License](LICENSE).
+
+The MIT License does not grant permission to use the NÜenergy name, logo, trademarks, product names, nutritional content, photographs, illustrations, packaging designs, or other proprietary brand assets.
+
+Original code, components, and designs created by other contributors remain subject to their original ownership and licensing terms. Third-party code and assets remain subject to their respective licenses and terms.
